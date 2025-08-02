@@ -14,7 +14,8 @@ function divide(number1, number2) {
     return number2 !== 0 ? number1 / number2 : "Error: Divide by 0";
 }
 
-console.log(add(5, 3));        // just for testing
-console.log(subtract(5, 3));   // just for testing
-console.log(multiply(5, 3));   // just for testing
-console.log(divide(5, 0));     // just for testing
+function getNumbers() {
+    const number1 = parseFloat(document.getElementById('number1').value) || 0;
+    const number2 = parseFloat(document.getElementById('number2').value) || 0;
+    return { number1, number2 };
+}
