@@ -19,3 +19,6 @@ function getNumbers() {
     const number2 = parseFloat(document.getElementById('number2').value) || 0;
     return { number1, number2 };
 }
+function displayResult(result) {
+    document.getElementById('calculation-result').textContent = result;
+}
