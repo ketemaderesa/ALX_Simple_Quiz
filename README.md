@@ -1,52 +1,95 @@
-# ALX_Simple_Quiz
+ALX_Simple_Quiz & Simple Calculator
+Overview
+This repository contains two beginner-friendly JavaScript projects:
 
-## Overview
-This is a simple interactive quiz built with HTML, CSS, and JavaScript.  
-The quiz presents a question, allows the user to select one of multiple answers,  
-and provides immediate feedback upon submission.
+Simple Interactive Quiz – A multiple-choice quiz with instant feedback.
 
----
+Simple Calculator – A basic calculator that performs addition, subtraction, multiplication, and division.
 
-## Project Structure
+Project Structure
 .
-├── index.html # Main HTML file for the quiz
-├── styles.css # Styling for the quiz interface
-└── quiz.js # JavaScript functionality
+├── quiz
+│   ├── index.html        # Quiz HTML layout
+│   ├── styles.css        # Quiz styling
+│   └── quiz.js           # Quiz functionality
+│
+└── calculator
+    ├── index.html        # Calculator HTML layout
+    ├── calculator.css    # Calculator styling
+    └── calculator.js     # Calculator functionality
+Features
+Simple Quiz:
+Displays one question with multiple-choice answers.
 
----
+Allows selecting only one answer.
 
-## Features
-- Displays a single question with multiple-choice answers.
-- Allows the user to select one answer at a time.
-- Shows feedback indicating whether the selected answer is correct or not.
-- Uses basic JavaScript DOM manipulation (no libraries or frameworks).
+Provides feedback for correct, incorrect, or missing selection.
 
----
+Uses plain JavaScript (no frameworks).
 
-## How It Works
-1. **HTML:** Contains the quiz structure:
-   - A question (`#quiz-question`)
-   - Multiple radio buttons for answers
-   - A submit button (`#submit-answer`)
-   - A feedback paragraph (`#feedback`)
+Simple Calculator:
+Performs basic arithmetic operations:
 
-2. **CSS:** Adds basic styling, making the quiz visually clean and centered.
+Addition
 
-3. **JavaScript (`quiz.js`):**
-   - Defines a `checkAnswer` function.
-   - Checks if the selected answer matches the correct answer (`4`).
-   - Displays feedback message accordingly.
-   - Uses an event listener on the submit button to trigger validation.
+Subtraction
 
----
+Multiplication
 
-## How to Run
-1. Clone the repository:
+Division
 
-   git clone https://github.com/<ketemaderesa>/ALX_Simple_Quiz.git
-Open index.html in any modern web browser.
+Interactive buttons to trigger calculations.
 
-Select an answer and click Submit Answer to see the feedback.
+Displays results dynamically without refreshing the page.
+
+How It Works
+Quiz
+HTML: Contains a question, radio inputs for answers, a submit button, and a feedback section.
+
+CSS: Styles the quiz layout for clarity and good presentation.
+
+JavaScript:
+
+Defines a checkAnswer function.
+
+Compares selected input with the correct answer (4).
+
+Displays color-coded feedback.
+
+Uses event listener to trigger answer checking on button click.
+
+Calculator
+HTML:
+
+Two number input fields.
+
+Four buttons for +, -, *, /.
+
+A result display area.
+
+CSS:
+
+Centers the calculator on the screen.
+
+Styles input fields, buttons, and result area.
+
+JavaScript:
+
+Defines functions for addition, subtraction, multiplication, and division.
+
+Attaches event listeners to each button.
+
+Fetches input values, performs the calculation, and updates the result dynamically.
+
+How to Run
+Clone the repository:
+
+git clone https://github.com/<ketemaderesa>/ALX_Simple_Quiz.git
+Open either project in your browser:
+
+For the quiz, open quiz/index.html.
+
+For the calculator, open calculator/index.html.
 
 Author
 Ketema Deresa
