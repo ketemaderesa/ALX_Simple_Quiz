@@ -1,4 +1,5 @@
 ALX_Simple_Quiz & Simple Calculator
+__________________________________________________________________________________________________
 Overview
 This repository contains two beginner-friendly JavaScript projects:
 
