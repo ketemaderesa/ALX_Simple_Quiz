@@ -16,6 +16,5 @@ function checkAnswer() {
         feedback.textContent = "Please select an answer before submitting.";
         feedback.style.color = "orange";
     }
-
-   
 }
+document.getElementById('submit-answer').addEventListener('click', checkAnswer);
